@@ -1,0 +1,13 @@
+[user]
+	name = Chuck Lemons
+	email = chuck@southerncolumbine.com
+[alias]
+  co = checkout
+  ci = commit
+  st = status
+  br = branch
+  history = log --pretty=format:'%C(yellow)%h%Creset |%C(red)%d%Creset %s %Cgreen(%cr) %C(bold blue)[%an]%Creset' --abbrev-commit --date=short --branches --graph
+  type = cat-file -t
+  dump = cat-file -p
+[color]
+  ui = true
