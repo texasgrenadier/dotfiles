@@ -1,6 +1,6 @@
 [user]
-	name = Chuck Lemons
-	email = chuck@southerncolumbine.com
+  name = Chuck Lemons
+  email = clemons@apartments.com
 [alias]
   co = checkout
   ci = commit
@@ -11,3 +11,5 @@
   dump = cat-file -p
 [color]
   ui = true
+[push]
+  default = matching
