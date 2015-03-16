@@ -104,6 +104,7 @@ task :default do
 
   link_file 'bashrc'          , '~/.bashrc'
   link_file 'bash_profile'    , '~/.bash_profile'
+  link_file 'bash_aliases'    , '~/.bash_aliases'
   link_file 'gitconfig'       , '~/.gitconfig'
 
   # link_file 'bash'            , '~/.bash'
