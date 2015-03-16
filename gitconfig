@@ -9,6 +9,45 @@
   history = log --pretty=format:'%C(yellow)%h%Creset |%C(red)%d%Creset %s %Cgreen(%cr) %C(bold blue)[%an]%Creset' --abbrev-commit --date=short --branches --graph
   type = cat-file -t
   dump = cat-file -p
+  po = push origin
+  pro = pull --rebase origin
+  fo = fetch origin
+  pom = push origin master
+  rem = remote -v
+  rshow = remote show origin
+  st = status --short --branch --ignore-submodules
+  br = branch
+  cp = cherry-pick
+  merff = merge --ff-only
+  tag = tag -a
+  aa = add --all
+  au = add -u
+  ap = add --patch
+  # stash operations
+  sl = stash list
+  sa = stash apply
+  ss = stash save
+  # show diff in working tree since last commit, including new files
+  ds = diff --color-words --ignore-all-space --cached
+  dc = diff --cached
+  dlc = diff --cached HEAD^
+  di = diff HEAD --color-words --ignore-all-space
+  # find git tracked-files
+  f = "!git ls-files | grep -i"
+  get = grep --color=auto --break --ignore-case -Ii --untracked --before-context 1 --after-context 2 -e
+  # view logs
+  l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  hist ="!git l --pretty=format:\"%h -- %s [%cd, %cn, %cr]\" --stat -42 --graph --date=short"
+  lg ="!git l -C --stat --decorate"
+  lgp ="!git l -C --stat -p --decorate"
+  rlg = reflog show
+  up = remote update --prune
+  shit = "!gitk --all $( git fsck --no-reflog | awk '/dangling commit/ {print $3}' )"
+  oops = reset --soft "HEAD^"
+  unstage = reset HEAD
+  sup = submodule update
+  code-review = difftool origin/master...
+  ign = ls-files -o -i --exclude-standard
 [color]
   ui = true
 [push]
