@@ -51,4 +51,4 @@
 [color]
   ui = true
 [push]
-  default = matching
+  default = current
