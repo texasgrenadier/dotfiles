@@ -63,6 +63,10 @@ alias sandbox="cd $HOME/Development/"
 #alias sshtunnels.productionauto='ssh -L 10080:10.0.1.51:80 -L 10081:logstash.production.auto.com:80 -L 9200:logstash.production.auto.com:9200 chuck@bastion.production.auto.com'
 alias sshtunnels.productionauto='ssh -L 10080:10.0.1.51:80 -L 10081:logstash.production.auto.com:80 -L 9200:logstash.production.auto.com:9200 auto-production-bastion'
 
+
+alias show-hidden-files="defaults write com.apple.finder AppleShowAllFiles -boolean true ; killall Finder"
+alias hide-hidden-files="defaults write com.apple.finder AppleShowAllFiles -boolean false ; killall Finder"
+
 alias flushmc-ahl2="echo 'flush_all' | nc ahlmemcache2.usweb.costar.local 11211"
 alias flushmc-ahl3="echo 'flush_all' | nc ahlmemcache1.usweb.costar.local 11211"
 
