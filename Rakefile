@@ -102,12 +102,12 @@ desc 'Install these config files.'
 task :default do
   step 'symlink'
 
+  link_file 'bash'            , '~/.bash'
   link_file 'bashrc'          , '~/.bashrc'
   link_file 'bash_profile'    , '~/.bash_profile'
   link_file 'bash_aliases'    , '~/.bash_aliases'
   link_file 'gitconfig'       , '~/.gitconfig'
 
-  # link_file 'bash'            , '~/.bash'
   # link_file 'ssh_config'      , '~/.ssh/ssh_config'
   # link_file 'ctags/ctags'     , '~/.ctags'
   # link_file 'bash_profile'    , '~/.bash_profile'

@@ -3,10 +3,12 @@ PATH=$PATH:/usr/local/mysql/bin:$HOME/.rvm/bin:$HOME/bin
 
 DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
 
-source ~/git-completion.bash
+if [ -f ~/.bash/completions ]; then
+  source ~/.bash/completions
+fi
 
 if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
+  . ~/.bash_aliases
 fi
 
 HISTCONTROL=ignoredups:ignorespace
