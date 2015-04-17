@@ -72,7 +72,7 @@ namespace :install do
     step 'iterm2'
     unless app? 'iTerm'
       system <<-SHELL
-        curl -L -o iterm.zip http://iterm2.googlecode.com/files/iTerm2-1_0_0_20120203.zip && \
+        curl -L -o iterm.zip https://iterm2.com/downloads/stable/iTerm2_v2_0.zip && \
           unzip iterm.zip && \
           mv iTerm.app /Applications && \
           rm iterm.zip
@@ -130,8 +130,9 @@ task :default do
   # link_file 'com.googlecode.iterm2.plist', '~/com.googlecode.iterm2.plist/'
   # link_file 'bash/tmux_battery.sh', '~/.tmux_battery.sh'
 
-  # Rake::Task['install:iterm'].invoke
-  # Rake::Task['install:brew'].invoke
+  Rake::Task['install:iterm'].invoke
+  Rake::Task['install:brew'].invoke
+
   # PACKAGES.each do |package|
   #   Rake::Task["install:#{package}"].invoke
   # end
