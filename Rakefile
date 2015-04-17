@@ -112,9 +112,7 @@ task :default do
 
   # link_file 'ssh_config'      , '~/.ssh/ssh_config'
   # link_file 'ctags/ctags'     , '~/.ctags'
-  # link_file 'bash_profile'    , '~/.bash_profile'
   # link_file 'agignore'        , '~/.agignore'
-  # link_file 'gitconfig'       , '~/.gitconfig'
   # link_file 'gitignore_global', '~/.gitignore_global'
   # link_file 'gitmessage.txt'  , '~/.gitmessage.txt'
   # link_file 'pryrc'           , '~/.pryrc'
