@@ -88,7 +88,6 @@ namespace :install do
     end
   end
 
-
   PACKAGES.each do |package|
     desc "Install #{package}"
     task "#{package.to_sym}" do
@@ -96,6 +95,29 @@ namespace :install do
       brew_install "#{package}"
     end
   end
+
+  VIM_PLUGINS = [
+    "git://github.com/scrooloose/nerdtree.git",
+    "git://github.com/kien/ctrlp.vim.git"
+  ]
+
+  desc "Install VIM plugins"
+  task :vim_plugins do
+    puts "Cleaning out VIM plugins directory"
+    plugins_dir = ENV["HOME"] +  "/.vim/bundle"
+    Dir["#{plugins_dir}/*"].each { |d|
+      FileUtils.rm_rf d 
+    }
+
+    puts "Installing VIM plugins"
+    VIM_PLUGINS.each do |url|
+      dir = ENV["HOME"] + "/.vim/bundle/" + url.split('/').last.sub(/\.git$/, '')
+      puts "unpacking #{url} into #{dir}"
+      `git clone #{url} #{dir}`
+      FileUtils.rm_rf(File.join(dir, ".git"))
+    end
+  end
+
 end
 
 desc 'Install these config files.'

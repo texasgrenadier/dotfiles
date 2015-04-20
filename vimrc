@@ -15,3 +15,4 @@ colorscheme solarized
 " remap semi-colon to colon
 nnoremap ; :
 
+map <C-n> :NERDTreeToggle<CR>
