@@ -109,6 +109,8 @@ task :default do
   link_file 'gitconfig'       , '~/.gitconfig'
   link_file 'vim'             , '~/.vim'
   link_file 'vimrc'           , '~/.vimrc'
+  link_file 'tmux'            , '~/.tmux'
+  link_file 'tmux/tmux.conf'  , '~/.tmux.conf'
 
   # link_file 'ssh_config'      , '~/.ssh/ssh_config'
   # link_file 'ctags/ctags'     , '~/.ctags'
@@ -124,11 +126,7 @@ task :default do
   # link_file 'urlview'         , '~/.urlview'
   # link_file 'psqlrc'          , '~/.psqlrc'
   # link_file 'psqlrc.local'    , '~/.psqlrc.local'
-  # link_file 'tmux.conf'       , '~/.tmux.conf'
-  # link_file 'tmux.clipboard'  , '~/.tmux.clipboard'
-  # link_file 'tmux.conf.local' , '~/.tmux.conf.local'
   # link_file 'com.googlecode.iterm2.plist', '~/com.googlecode.iterm2.plist/'
-  # link_file 'bash/tmux_battery.sh', '~/.tmux_battery.sh'
 
   Rake::Task['install:iterm'].invoke
   Rake::Task['install:brew'].invoke
