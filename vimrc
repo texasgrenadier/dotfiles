@@ -9,5 +9,6 @@ set background=dark
 "set background=light
 colorscheme solarized
 
-nnoremap ; : " remap semi-colon to colon
+" remap semi-colon to colon
+nnoremap ; :
 
