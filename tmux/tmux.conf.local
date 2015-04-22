@@ -30,5 +30,5 @@ set -g status-left '#[fg=green]#h#[default, bold] [%l:%M%p | %m/%d/%y]'
 
 # Display battery level
 set -g status-right-length 50
-set -g status-right '#[fg=red, bold] Level: #(~/.tmux/tmux_battery.sh)'
+set -g status-right '#[fg=red, bold] Battery: #(~/.tmux/tmux_battery.sh)'
 
