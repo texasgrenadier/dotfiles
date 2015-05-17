@@ -6,6 +6,7 @@ set hlsearch
 set expandtab
 set shiftwidth=2
 set softtabstop=2
+set autoindent
 
 syntax enable
 set background=dark
