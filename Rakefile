@@ -63,9 +63,12 @@ namespace :install do
     # PACKAGES.push(addtl_packages).flatten
   end
 
-  PACKAGES = ['bash', 'openssl', 'curl-ca-bundle', 'python', 'the_silver_searcher', 'elasticsearch', 'ack', 'chruby',
-              'ruby-install', 'node', 'git', 'elixir', 'go', 'postgis', 'mutt', 'imagemagick', 'phantomjs', 'tree', 'tig',
-              'htop', 'redis', 'riak', 'postgresql',  'mongodb', 'mysql', 'fish', 'weechat']
+  #PACKAGES = ['bash', 'openssl', 'curl-ca-bundle', 'python', 'the_silver_searcher', 'elasticsearch', 'ack', 'chruby',
+  #            'ruby-install', 'node', 'git', 'elixir', 'go', 'postgis', 'mutt', 'imagemagick', 'phantomjs', 'tree', 'tig',
+  #            'htop', 'redis', 'riak', 'postgresql',  'mongodb', 'mysql', 'fish', 'weechat']
+  PACKAGES = ['openssl', 'autoconf', 'automake', 'csshx', 'gettext',
+              'libevent', 'libgpg-error', 'libksba', 'libtool', 'libyaml',
+              'pkg-config', 'pv', 'readline', 'redis', 'tmux', 'wget']
 
   desc 'Install iTerm'
   task :iterm do
@@ -83,7 +86,7 @@ namespace :install do
   desc 'Update or Install Brew'
   task :brew do
     step 'Homebrew'
-    unless system('which brew > /dev/null || ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"')
+    unless system('which brew > /dev/null || ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"')
       raise "Homebrew must be installed before continuing."
     end
   end
@@ -153,9 +156,9 @@ task :default do
   Rake::Task['install:iterm'].invoke
   Rake::Task['install:brew'].invoke
 
-  # PACKAGES.each do |package|
-  #   Rake::Task["install:#{package}"].invoke
-  # end
+  PACKAGES.each do |package|
+    Rake::Task["install:#{package}"].invoke
+  end
 
   # step 'iterm2 colorschemes'
   # colorschemes = `defaults read com.googlecode.iterm2 'Custom Color Presets'`
