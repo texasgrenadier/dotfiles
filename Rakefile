@@ -101,7 +101,8 @@ namespace :install do
 
   VIM_PLUGINS = [
     "git://github.com/scrooloose/nerdtree.git",
-    "git://github.com/kien/ctrlp.vim.git"
+    "git://github.com/kien/ctrlp.vim.git",
+    "git://github.com/bling/vim-airline"
   ]
 
   desc "Install VIM plugins"
