@@ -61,9 +61,6 @@ alias unicorn="be unicorn -p 3000"
 alias pry-rails="pry -r ./config/environment"
 alias sandbox="cd $HOME/sandbox/"
 alias working="cd $HOME/working/"
-#alias sshtunnels.productionauto='ssh -L 10080:10.0.1.51:80 -L 10081:logstash.production.auto.com:80 -L 9200:logstash.production.auto.com:9200 chuck@bastion.production.auto.com'
-alias sshtunnels.productionauto='ssh -L 10080:10.0.1.51:80 -L 10081:logstash.production.auto.com:80 -L 9200:logstash.production.auto.com:9200 auto-production-bastion'
-
 
 alias show-hidden-files="defaults write com.apple.finder AppleShowAllFiles -boolean true ; killall Finder"
 alias hide-hidden-files="defaults write com.apple.finder AppleShowAllFiles -boolean false ; killall Finder"
