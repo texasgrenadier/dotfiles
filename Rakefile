@@ -102,7 +102,8 @@ namespace :install do
   VIM_PLUGINS = [
     "git://github.com/scrooloose/nerdtree.git",
     "git://github.com/kien/ctrlp.vim.git",
-    "git://github.com/bling/vim-airline"
+    "git://github.com/bling/vim-airline",
+    "git://github.com/bronson/vim-trailing-whitespace"
   ]
 
   desc "Install VIM plugins"
@@ -110,7 +111,7 @@ namespace :install do
     puts "Cleaning out VIM plugins directory"
     plugins_dir = ENV["HOME"] +  "/.vim/bundle"
     Dir["#{plugins_dir}/*"].each { |d|
-      FileUtils.rm_rf d 
+      FileUtils.rm_rf d
     }
 
     puts "Installing VIM plugins"
