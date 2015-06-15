@@ -23,6 +23,8 @@ nnoremap ; :
 map <C-n> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
+let NERDTreeWinSize=50
+
 " airline
 let g:airline_theme             = 'powerlineish'
 
