@@ -21,3 +21,9 @@ HISTSIZE=1000
 
 # append to the history file, don't overwrite it
 shopt -s histappend
+
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    alias ls='ls -h --color'
+fi
+
