@@ -1,14 +1,16 @@
 #!/bin/bash
 
-ln -s ~/dotfiles/bash ~/.bash
-ln -s ~/dotfiles/bashrc ~/.bashrc
-ln -s ~/dotfiles/bash_profile ~/.bash_profile
-ln -s ~/dotfiles/bash_aliases ~/.bash_aliases
-ln -s ~/dotfiles/gitconfig ~/.gitconfig
-ln -s ~/dotfiles/vim ~/.vim
-ln -s ~/dotfiles/vimrc ~/.vimrc
-ln -s ~/dotfiles/tmux ~/.tmux
-ln -s ~/dotfiles/tmux/tmux.conf ~/.tmux.conf
+ln -s dotfiles/bash ~/.bash
+ln -s dotfiles/bashrc ~/.bashrc
+ln -s dotfiles/bash_profile ~/.bash_profile
+ln -s dotfiles/bash_aliases ~/.bash_aliases
+ln -s dotfiles/gitconfig ~/.gitconfig
+ln -s dotfiles/vim ~/.vim
+ln -s dotfiles/vimrc ~/.vimrc
+ln -s dotfiles/tmux ~/.tmux
+ln -s dotfiles/tmux/tmux.conf ~/.tmux.conf
+
+curl https://raw.github.com/seebi/dircolors-solarized/master/dircolors.256dark > ~/.dircolors
 
 git clone git://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
 git clone git://github.com/kien/ctrlp.vim.git ~/.vim/bundle/ctrlp.vim
