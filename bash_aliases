@@ -1,6 +1,6 @@
 
 # Unix
-alias ls='ls -Gh'
+alias ls='ls -h'
 alias tlf="tail -f"
 alias ...="cd ../.."
 alias ..="cd .."
