@@ -11,6 +11,9 @@ set autoindent
 
 set laststatus=2
 
+set nobackup
+set noswapfile
+
 syntax enable
 set background=dark
 "set background=light
