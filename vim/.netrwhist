@@ -1,5 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/Users/chucklemons/working/auto.com'
-let g:netrw_dirhist_2='/Users/chucklemons/working/devops/aws/config'
-let g:netrw_dirhist_3='/Users/chucklemons/.ssh'
