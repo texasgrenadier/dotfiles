@@ -1,6 +1,8 @@
 [user]
   name = Chuck Lemons
   email = chuck@southerncolumbine.com
+[core]
+  editor = vim
 [alias]
   co = checkout
   ci = commit
