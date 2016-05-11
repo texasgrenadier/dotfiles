@@ -103,6 +103,7 @@ namespace :install do
     "git://github.com/scrooloose/nerdtree.git",
     "git://github.com/kien/ctrlp.vim.git",
     "git://github.com/bling/vim-airline",
+    "git://github.com/vim-airline/vim-airline-themes",
     "git://github.com/bronson/vim-trailing-whitespace"
   ]
 
