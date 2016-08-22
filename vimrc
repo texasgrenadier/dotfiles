@@ -8,6 +8,7 @@ set expandtab
 set shiftwidth=2
 set softtabstop=2
 set autoindent
+set modelines=1
 
 set laststatus=2
 
