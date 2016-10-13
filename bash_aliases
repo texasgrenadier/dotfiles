@@ -17,6 +17,7 @@ alias vdf="vagrant destroy --force"
 alias vup="vagrant up"
 alias vs="vagrant status"
 alias vssh="vagrant ssh"
+alias vp="vagrant provision"
 
 # Bundler
 alias be="bundle exec"
