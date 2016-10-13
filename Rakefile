@@ -104,7 +104,8 @@ namespace :install do
     "git://github.com/kien/ctrlp.vim.git",
     "git://github.com/bling/vim-airline",
     "git://github.com/vim-airline/vim-airline-themes",
-    "git://github.com/bronson/vim-trailing-whitespace"
+    "git://github.com/bronson/vim-trailing-whitespace",
+    "git://github.com/jtratner/vim-flavored-markdown.git"
   ]
 
   desc "Install VIM plugins"
