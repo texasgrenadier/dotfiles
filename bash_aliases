@@ -7,7 +7,7 @@ alias ..="cd .."
 
 # Editors
 alias Emacs="/Applications/Emacs.app/Contents/MacOS/Emacs"
-alias subl="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl"
+alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 
 # Git
 alias g="git"
