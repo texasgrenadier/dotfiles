@@ -10,6 +10,8 @@ ln -s dotfiles/vimrc ~/.vimrc
 ln -s dotfiles/tmux ~/.tmux
 ln -s dotfiles/tmux/tmux.conf ~/.tmux.conf
 
+ln -s /Applications/Sublime Text.app/Contents/SharedSupport/bin/subl ~/bin/subl
+
 curl https://raw.githubusercontent.com/seebi/dircolors-solarized/master/dircolors.256dark > ~/.dircolors
 
 git clone git://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree

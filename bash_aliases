@@ -5,10 +5,6 @@ alias tlf="tail -f"
 alias ...="cd ../.."
 alias ..="cd .."
 
-# Editors
-alias Emacs="/Applications/Emacs.app/Contents/MacOS/Emacs"
-alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
-
 # Git
 alias g="git"
 
