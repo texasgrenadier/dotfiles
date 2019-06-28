@@ -2,7 +2,9 @@
 call pathogen#infect()
 call pathogen#helptags()
 
-set number
+set number norelativenumber
+nmap <C-l> :set relativenumber!<CR>
+
 set hlsearch
 set expandtab
 set autoindent
