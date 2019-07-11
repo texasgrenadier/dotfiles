@@ -7,3 +7,6 @@ fi
 export PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}\007"'
 
 export PATH="/usr/local/bin:$PATH"
+
+PATH="/Applications/VMware OVF Tool:${PATH}"
+export PATH
