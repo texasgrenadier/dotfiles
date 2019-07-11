@@ -10,3 +10,6 @@ export PATH="/usr/local/bin:$PATH"
 
 PATH="/Applications/VMware OVF Tool:${PATH}"
 export PATH
+
+export P4CONFIG=.p4config
+export P4EDITOR=/usr/bin/vi
