@@ -11,5 +11,9 @@ export PATH="/usr/local/bin:$PATH"
 PATH="/Applications/VMware OVF Tool:${PATH}"
 export PATH
 
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
 export P4CONFIG=.p4config
 export P4EDITOR=/usr/bin/vi
