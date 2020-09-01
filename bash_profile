@@ -2,6 +2,8 @@ if [ -f ~/.bashrc ]; then
   source ~/.bashrc
 fi
 
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
 export PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}\007"'
 
 export PATH="/usr/local/bin:$PATH"
