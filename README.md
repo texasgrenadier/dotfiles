@@ -1,4 +1,4 @@
-# dotfiles
+Instructions for setting up my development systems.
 
 # Install brew
 
