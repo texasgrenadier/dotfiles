@@ -2,9 +2,10 @@
 call pathogen#infect()
 call pathogen#helptags()
 
-set number norelativenumber
+set number relativenumber
 nmap <C-l> :set relativenumber!<CR>
 
+set re=0
 set hlsearch
 set expandtab
 set autoindent
@@ -46,4 +47,7 @@ augroup markdown
     au!
     au BufNewFile,BufRead *.md,*markdown setlocal filetype=ghmarkdown
 augroup END
+
+nmap <C-j> <C-d>
+nmap <C-k> <C-u>
 
